@@ -1,0 +1,168 @@
+       body {
+            margin: 0;
+            padding: 0;
+            background-color: #060606; /* Blue background color */
+            color: rgb(8, 8, 8);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-image: url('background.jpg'); /* Replace 'your-image.jpg' with your image URL */
+            background-size: cover;
+
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Fixed background */
+            background-position: center center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align items to the top */
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        h2 {
+            text-align: center;
+            color: rgb(9, 9, 9);
+            font-size: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(242, 240, 240);
+        }
+        p {
+            line-height: 1.5;
+            text-align: center;
+            margin-top: 50px;
+            color: rgb(252, 246, 246);
+            
+        }
+       
+        /* government Website Ends */
+
+
+
+
+
+        /* Translator Button Styles */
+        .translator-button {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(243, 248, 246);
+            color: #ff6b02;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .translator-button img {
+        
+            width: 40px;
+            height: 40px;
+        }
+        /* Botton Style Ends */
+
+
+
+
+        /* Modal Or translator container Styles */
+        .translator-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3); /* Slightly transparent background */
+            z-index: 1001;
+        }
+        .translator-content {
+            background-color: rgb(248, 245, 245,0.95);
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 285px;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+    /* Select Option Style And size */
+        select, textarea {
+            width: 35%; /* Adjust as needed */
+            padding: 10px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+        /* Clear Button In text area */
+        .clear-button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+
+        /* Style the 'X' symbol inside the button */
+        .clear-button::after {
+            content: 'X';
+            font-weight: bold;
+        }
+
+    /* Input and Output Text Area */
+        textarea {
+            width: 93%;
+            height: 100px;
+        }
+
+   /* Language Options Button */
+        .language-selection {
+            display: flex;
+            margin-top: 0;
+            justify-content: space-between;
+            margin-bottom: 0px;
+            color: rgb(0, 0, 0);
+        }
+
+    /*Language translator tab Close button */
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            cursor: pointer;
+            color: black;
+            font-size: 30px; 
+        }
+    /* Information About the Team and Developer */
+        .developer{
+            text-align: center;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #333232;
+        }
+
+        .emoji-image {
+             width: 13px; /* Adjust this value to your preferred width */
+             height: 13px; /* Maintain the aspect ratio */
+             vertical-align: middle;
+        }
+
+/* Exchange Symbol in Between the Language Option*/
+        .exchange-symbol {
+            font-size: 24px; /* Increase the font size as desired */
+            cursor: pointer;
+        }
+        

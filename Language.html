@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator Hackthon</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body>
+
+<!-- Rest of Governments Website Code Here -->
+    <div class="container">
+        <h1>Governments Website</h1>
+        <p>Server is down please Try again</p>
+    </div>
+
+
+
+
+
+    <!-- Translator Button -->
+    <div class="translator-button" onclick="openTranslator()">
+        <img src="translation-icon.png" alt="Translator Icon">
+    </div>
+    
+    <!-- Translator Modal -->
+    <div id="translator-modal" class="translator-modal">
+        <div class="translator-content">
+            <span class="close" onclick="closeTranslator()">&times;</span>
+            <!-- Language Translator code here (from previous examples) -->
+
+
+
+            <div >
+                <h2>Translator</h2>
+        
+                <div class="language-selection">
+                    <label for="sourceLang">From:</label>
+                    <label for="targetLang">To:</label>
+                </div>
+                <div class="language-selection">
+                    <select id="sourceLang">
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                        <option value="mr">Marathi</option>
+                        <option value="bn">Bengali</option>
+                        <option value="mai">Maithili</option>
+                        <option value="ta">Tamil</option>
+                        <option value="te">Telugu</option>
+                        <!-- Add more source languages here -->
+                    </select>
+                    <span id="exchange" class="exchange-symbol" onclick="swapLanguages()">&#8644;</span>
+                    <select id="targetLang">
+                        <option value="hi">Hindi</option>
+                        <option value="en">English</option>
+                        <option value="mr">Marathi</option>
+                        <option value="bn">Bengali</option>
+                        <option value="mai">Maithili</option>
+                        <option value="ta">Tamil</option>
+                        <option value="te">Telugu</option>
+                        
+                        <!-- Add more target languages here -->
+                    </select>
+                </div>
+        
+                
+                <div style="position: relative;">
+                    <textarea id="sourceText" placeholder="Enter text..."></textarea>
+                    <button class="clear-button" onclick="clearText()"></button>
+                </div>
+                
+                
+                <textarea id="outputText" placeholder="Translation will appear here" readonly></textarea>
+            </div>
+            <div class="developer">Developed By Team Seven</div>
+            <div class="developer">MIT CIDCO</div>
+    </div>
+
+
+
+   <script src="script.js"></script>
+    
+</body>
+</html>
